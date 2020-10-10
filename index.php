@@ -32,7 +32,7 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top" >
     <div class="container d-flex">
 
       <div class="logo mr-auto">
@@ -52,106 +52,25 @@
     </div>
   </header><!-- End Header -->
 <main class="main">
-  <!-- ======= Slider Section ======= -->
-  <div id="home" class="slider-area">
-    <div class="bend niceties preview-2">
-      <div id="ensign-nivoslider" class="slides">
-        <img src="assets/img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
-        <img src="assets/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
-        <img src="assets/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
-      </div>
-
-      <!-- direction 1 -->
-      <div id="slider-direction-1" class="slider-direction slider-one">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="slider_container"> 
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow animate__slideInDown animate__animated" data-wow-duration="5s" data-wow-delay=".5s">
-                  <h2 class="title1">The Best Business Information </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow animate__fadeIn animate__animated" data-wow-duration="5s" data-wow-delay=".5s">
-                  <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="5s" data-wow-delay=".5s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Business</a>
-                  <a class="ready-btn page-scroll" href="#about">Career</a>
-                </div>
+         <div class="slider">
+             <div class="slider-container">
+                <img src="assets/img/slider/slider1.jpg" alt="carousel-01" />
+                <img src="assets/img/slider/slider2.jpg" alt="carousel-01" />
+                <img src="assets/img/slider/slider3.jpg" alt="carousel-01" />
+                <img src="assets/img/slider/slider4.jpg" alt="carousel-01" />
+                <div class="text">
+                  <h2>We're In The Business Of Helping You Start Your Business</h2> 
+                  <h3>We strategize, we innovate, we engage, we inspire and we get things done !!</h3>
+                  <button class="button">Business</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button class="button">Career</button></div>
               </div>
-            </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="slider_container">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best Business Information </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow animate__fadeIn animate__animated" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Business</a>
-                  <a class="ready-btn page-scroll" href="#about">Career</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="slider_container">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best business Information </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow animate__fadeIn animate__animated" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Helping Business Security & Peace of Mind for Your Family</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Business</a>
-                  <a class="ready-btn page-scroll" href="#about">Career</a>
-                </div>
-              </div>
-           </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Slider -->
 </main><!--end class main-->
 
   <!-- ======= Footer ======= -->
-  <footer>
-      <!-- ======= Suscribe Section ======= -->
-    <div class="suscribe-area">
-      <div class="container">
-        <div class="row">
-       
+  <footer class="footer">
+    <!-- ======= Suscribe Section ======= -->
+    <div class="social-icon"> 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
             <div class="suscribe-text text-center">
                 <a href="https://www.facebook.com/yourHRteam1/" target='_blank' class="fa fa-facebook"></a>
@@ -160,13 +79,9 @@
                 <a href="https://www.instagram.com/hrsuperhero/" target='_blank' class="fa fa-instagram" ></a>
             </div>
           </div>
-        </div>
-      </div>
     </div><!-- End Suscribe Section -->
 
     <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
@@ -175,8 +90,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
   </footer><!-- End  Footer -->
 
   <!-- Vendor JS Files -->
@@ -192,6 +105,8 @@
   <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
+<!------slider implements---->
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
