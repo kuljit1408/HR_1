@@ -6,14 +6,14 @@
 html, body {
   height: 100%;
 }
+
 body {
   background: #fff none repeat scroll 0 0;
-  color: #444;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   text-align: left;
-  overflow-x: hidden;
   line-height: 22px;
+ 
 }
 
 @media (max-width: 768px) {
@@ -26,15 +26,29 @@ body {
   clear: both;
 }
 
-
-/******************************************/
-.title1{
-  color: #3cd6ed;
-}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/*Animation*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header{  
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  background: #333;
+  padding: 30px;
+
+}
+
 #header {
+  position: sticky;
+  top: 0;
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
@@ -44,7 +58,7 @@ body {
 }
 
 #header.header-scrolled {
-  background:black !important;
+  background: rgba(0, 0, 0, 0.8);
   height: 60px;
   padding: 10px 0;
 }
@@ -58,7 +72,7 @@ body {
 }
 
 #header .logo h1 span {
-  color: #3ec1d5;
+  color: #0abab5;
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -66,47 +80,6 @@ body {
   text-decoration: none;
 }
 
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
-
-@media (max-width: 768px) {
-  #header {
-    height: 60px;
-    padding: 10px 0;
-    background: rgba(0, 0, 0, 0.8);
-  }
-  #header .logo h1 {
-    font-size: 28px;
-    padding: 4px 0;
-  }
-}
-
-.header-bg {
-  background: url(../img/slider/slider1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-}
-
-@media (min-width: 1025px) {
-  .header-bg {
-    background-attachment: fixed;
-  }
-}
-
-.home-overly {
-  background: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Nav
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -133,181 +106,25 @@ body {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #3ec1d5;
+  color: #0abab5;
   text-decoration: none;
-}
-
-/* Mobile Navigation */
-.mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  line-height: 1;
-  cursor: pointer;
-  text-align: right;
-}
-
-.mobile-nav-toggle i {
-  color: #fff;
-}
-
-.mobile-nav {
-  position: fixed;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  z-index: 9999;
-  overflow-y: auto;
-  background: #fff;
-  transition: ease-in-out 0.2s;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 10px;
-  padding: 10px 0;
-}
-
-.mobile-nav * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.mobile-nav a {
-  display: block;
-  position: relative;
-  color: #0d2529;
-  padding: 10px 20px;
-  font-weight: 500;
-  outline: none;
-}
-
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #3ec1d5;
-  text-decoration: none;
-}
-
-
-.mobile-nav-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 9997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(1, 2, 2, 0.6);
-  overflow: hidden;
-  display: none;
-  transition: ease-in-out 0.2s;
-}
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-.mobile-nav-active .mobile-nav {
-  opacity: 1;
-  visibility: visible;
-}
-
-.mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
-.slider-area {
-  color: #fff;
-  position: relative;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 10px;
-  
-}
-.slider_container{
-  background:rgb(0,0,0,0.6);
-}
-.slider-content {
-  padding: 180px 60px;
-  height: 100%; 
-}
-
-
-
-/* Normal desktop :992px. */
-@media (min-width: 1400px) and (max-width: 1920px) {
-  .slider-content {
-    padding: 340px 0;
-  }
-}
-
-/* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1169px) {
-  .slider-content {
-    padding: 144px 0;
-  }
-}
-
-/* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
-  .slider-content {
-    padding: 93px 0;
-  }
-  .layer-1-2 h1 {
-    font-size: 22px;
-    line-height: 24px;
-  }
-  .layer-1-3 a.ready-btn {
-    font-size: 14px;
-    margin-top: 20px;
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .nivo-directionNav {
-    display: none;
-  }
-  .slider-content {
-    padding: 46px 0px;
-  }
-  .nivo-controlNav {
-    bottom: -8px;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .slider-content {
-    padding: 70px 0px;
-  }
-  
-}
-
-/*-------------------------------------------
-# About
---------------------------------------------------------------*/
-.main{
-    height: 100%;
-  
-}
-/********************SLIDER********************/
 .slider {
   position: relative;
-  height: 602px;
+  height: 100%;/*602 was perfect but it creats problem for about us content*/
   margin: auto;
   overflow: hidden;
+ 
+
 }
 
 .slider-container {
   width: 100%;
-  height: 100%;
+  height: 602px;
   overflow: hidden;
   position: relative;
 }
@@ -347,7 +164,9 @@ body {
   animation-delay: 15s;
 }
 
-/***caption ***/
+/*--------------------------------------------------------------
+# Slider text and buttons
+--------------------------------------------------------------*/
 .text {
   font-size: 20px;
   padding: 20px 20px;
@@ -356,15 +175,18 @@ body {
   width: 100%;
   background-color:rgba(0, 0, 0, 0.5);
   text-align: center;
-  margin-bottom: 130px;
+  margin-bottom: 200px;
 }
-.text h2,h3{
-  color: #3cd6ed;
+.text h2{
+  color: #0abab5;
   font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  
 }
 .button 
 {
-  background-color:#008CBA;
+  background-color:#0abab5;
   border-radius: 20px;
   border: none;
   color: white;
@@ -378,8 +200,81 @@ body {
 .button:hover
 {
   background-color: white;
-  color: #008CBA;
+  color: #0abab5;
   padding: 20px 40px;
+}
+
+/*----------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+p{
+  margin-left: 150px;
+  margin-right: 150px;
+  color: #000;
+  font-family: Lora;
+  font-size: 18px;
+  line-height: 32px;
+}
+h2{
+  margin-left: 500px;
+  font-size: 36px;
+  color: #0abab5;
+  line-height: 32px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 1px 1px black;
+}
+h3{
+  margin-left: 150px;
+  margin-right: 150px;
+  color:black;
+  font-family: Lora;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 1px 1px #0abab5;
+}
+.our-success h4{
+  margin-left: 150px;
+  margin-right: 150px;
+  color:black;
+  font-family: Lora;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 1px 1px red;
+}
+.img2 {
+  float: right;
+  height: 350px;
+  width: 400px;
+  margin-right: 150px;
+}
+
+.contact-us{
+  height: 100px;
+  width: 100%;
+  background-color:black;
+  text-align: center;
+  margin-top: 30px;
+  color: #0abab5;
+}
+.contact-us h2 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.contact-us a{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0abab5;
 }
 /*--------------------------------------------------------------
 # Contact
@@ -391,21 +286,19 @@ body {
 --------------------------------------------------------------*/
 
 
-/*--------------------------------------------------------------
-# Blog page
---------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer{
-  position: fixed;
-  bottom: 0px;
+  display: block;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 120px;
   background-color: #000;
+
+
 }
 .footer-area-bottom {
   background: #000;
@@ -454,243 +347,20 @@ body {
 }
 
 .suscribe-area {
-  background: #3EC1D5 none repeat scroll 0 0;
+  background: #0abab5 none repeat scroll 0 0;
 }
 .suscribe-text {
   display: block;
   padding: 10px 0;
 }
-
+.copyright p{
+  color: #fff;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 0%;
+}
 
 /*--------------------------------------------------------------
 # Responsive
 --------------------------------------------------------------*/
-@media (min-width: 1920px) {
-  .work-right-text {
-    padding: 150px 150px;
-  }
-}
 
-/* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1169px) {
-  .slider-content {
-    padding: 146px 0;
-  }
-  .work-right-text {
-    padding: 40px 0;
-  }
-  .work-right-text h2 {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-/* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
-  .layer-1-1 h2 {
-    font-size: 24px;
-  }
-  .layer-1-2 h1 {
-    font-size: 31px;
-    line-height: 38px;
-    padding: 0px 30px;
-  }
-  .tab-menu ul.nav li a {
-    padding: 10px 16px;
-  }
-  .work-right-text h5 {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .work-right-text {
-    padding: 36px 0;
-  }
-  .work-right-text h2 {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .work-right-text .ready-btn {
-    font-size: 13px;
-    padding: 7px 20px;
-    margin-top: 5px;
-  }
-  .single-awesome-portfolio {
-    width: 33.33%;
-  }
-  .widget-product a img {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-  .widget-product .product-info {
-    display: block;
-    float: none;
-    padding-left: 0;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .map-column {
-    margin-left: 0;
-    padding-right: 40px;
-  }
-  .post-information .entry-meta {
-    font-size: 13px;
-    padding: 5px 0;
-  }
-  .post-information .entry-meta span a {
-    padding: 4px 0;
-  }
-  .service-pic {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .single-add-itms {
-    width: 50%;
-  }
-  .left-sidebar-title > h4 {
-    font-size: 18px;
-  }
-  .contact-form {
-    margin-top: 0px;
-  }
-  .search-option input {
-    width: 67%;
-  }
-}
-
-/* small mobile :320px. */
-@media (max-width: 767px) {
-  .slider-area {
-    margin-top: 60px;
-    
-  }
-  .slider-content {
-   /* padding: 80px 0;*/
-  }
-  .slider_container{
-    height: 400px;
-  }
-  .slider-content h2 {
-    font-size: 18px !important;
-    line-height: 24px !important;
-  }
-  .slider-content h1 {
-    font-size: 20px !important;
-    line-height: 26px !important;
-  }
-  .layer-1-3 a.ready-btn {
-    padding: 8px 15px;
-  }
-  .section-headline h2 {
-    font-size: 30px;
-  }
-  .well-middle .single-well {
-    margin-top: 30px;
-  }
-  .single-skill {
-    margin-bottom: 40px;
-  }
-  .tab-menu {
-    margin-top: 30px;
-  }
-  .tab-menu ul.nav li a {
-    padding: 8px 6px;
-  }
-  .section-headline h3 {
-    font-size: 25px;
-  }
-  .well-text > h2 {
-    font-size: 18px;
-  }
-  .well-text p {
-    display: none;
-  }
-  .single-team-member {
-    margin-bottom: 30px;
-  }
-  .service-right {
-    width: 100%;
-  }
-  .service-images:hover .overly-text {
-    display: none;
-  }
-  .portfolio-area {
-    padding-top: 0px;
-  }
-  .project-menu li a {
-    padding: 8px 12px;
-    margin: 10px 4px;
-  }
-  .pri_table_list {
-    margin-bottom: 30px;
-  }
-  .single-awesome-project, .portfolio-2 .single-awesome-project {
-    width: 100%;
-    float: none;
-  }
-  .single-blog {
-    margin-bottom: 30px;
-  }
-  .sus-btn {
-    margin-left: 0;
-    margin-top: 30px;
-  }
-  .contact-form {
-    margin-top: 30px;
-  }
-  .head-team h5 {
-    font-size: 22px;
-  }
-  .footer-content {
-    margin-bottom: 30px;
-  }
-  .header-bottom h1 {
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-  .page-area .slider-content {
-    padding: 500px 0;
-  }
-  .search-option input {
-    width: 74%;
-  }
-  .header-bottom h2 {
-    font-size: 20px;
-    margin-bottom: 0;
-  }
-  li.threaded-comments {
-    margin-left: 0;
-  }
-}
-
-/* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .submitbtn {
-    float: none;
-    width: 99.8%;
-  }
-  .icons-bottom ul li a {
-    height: 40px;
-    line-height: 37px;
-    width: 40px;
-  }
-  .blog-post-dlc ul li {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .awesome-portfolio-content .portfolio-2 {
-    width: 50%;
-  }
-  .gallary-details .single-awesome-portfolio {
-    width: 50%;
-  }
-  .tab-menu ul.nav li a {
-    padding: 8px 20px;
-  }
-}
-
-@media (max-width: 575px) {
-  .slider-content {
-    padding: 0;
-  }
-}

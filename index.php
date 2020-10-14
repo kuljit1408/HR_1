@@ -34,7 +34,6 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top" >
     <div class="container d-flex">
-
       <div class="logo mr-auto">
         <h1 class="text-light"><a href="index.html"><span>HR</span>Superhero</a></h1>
       </div>
@@ -60,7 +59,7 @@
                 <img src="assets/img/slider/slider4.jpg" alt="carousel-01" />
                 <div class="text">
                   <h2>We're In The Business Of Helping You Start Your Business</h2> 
-                  <h3>We strategize, we innovate, we engage, we inspire and we get things done !!</h3>
+                  <h2>We strategize, we innovate, we engage, we inspire and we get things done !!</h2>
                   <button class="button">Business</button>&nbsp;&nbsp;&nbsp;&nbsp;
                   <button class="button">Career</button></div>
               </div>
@@ -82,31 +81,13 @@
     </div><!-- End Suscribe Section -->
 
     <div class="footer-area-bottom">
-          <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
                 &copy; Copyright <strong>HRSuperhero</strong>. All Rights Reserved
               </p>
             </div>
-          </div>
-        </div>
+    </div>
   </footer><!-- End  Footer -->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/appear/jquery.appear.js"></script>
-  <script src="assets/vendor/knob/jquery.knob.js"></script>
-  <script src="assets/vendor/parallax/parallax.js"></script>
-  <script src="assets/vendor/wow/wow.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-<!------slider implements---->
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

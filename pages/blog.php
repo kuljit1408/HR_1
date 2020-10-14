@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
@@ -20,7 +20,7 @@
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="..assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="../assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet">
   <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top" >
     <div class="container d-flex">
 
       <div class="logo mr-auto">
@@ -43,26 +43,24 @@
         <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="pages/about.php">About</a></li>
-          <li class="active"><a href="pages/blog.php">Blog</a></li>
-          <li><a href="pages/contact.php">Contact</a></li>
+          <li class="active"><a href="../pages/blog.php">Blog</a></li>
+          <li><a href="../pages/contact.php">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
-  
-<main class="main">
- <h1> main content will be here !!!!</h1>
+<main class="main" style="background-color:red;">
+<div class="slider">
+</div>
+        
 </main><!--end class main-->
 
   <!-- ======= Footer ======= -->
-  <footer>
-      <!-- ======= Suscribe Section ======= -->
-    <div class="suscribe-area">
-      <div class="container">
-        <div class="row">
-       
+  <footer class="footer">
+    <!-- ======= Suscribe Section ======= -->
+    <div class="social-icon"> 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
             <div class="suscribe-text text-center">
                 <a href="https://www.facebook.com/yourHRteam1/" target='_blank' class="fa fa-facebook"></a>
@@ -71,13 +69,9 @@
                 <a href="https://www.instagram.com/hrsuperhero/" target='_blank' class="fa fa-instagram" ></a>
             </div>
           </div>
-        </div>
-      </div>
     </div><!-- End Suscribe Section -->
 
     <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
@@ -86,8 +80,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
   </footer><!-- End  Footer -->
 
   <!-- Vendor JS Files -->
@@ -103,6 +95,8 @@
   <script src="../assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
   <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="../assets/vendor/venobox/venobox.min.js"></script>
+<!------slider implements---->
+
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
