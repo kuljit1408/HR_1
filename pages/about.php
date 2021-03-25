@@ -10,9 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="../assets/img/blog/logo.png" rel="icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
 
@@ -42,7 +40,6 @@
         <ul>
           <li><a href="../index.php">Home</a></li>
           <li class="active"><a href="pages/about.php">About</a></li>
-          <li><a href="../pages/blog.php">Blog</a></li>
           <li><a href="../pages/contact.php">Contact</a></li>
 
         </ul>
@@ -63,7 +60,7 @@
                  <h2>Founder &  CEO</h2>
                 </div>
                   <div class="img-content">
-                    <img class="img2" src="../assets/img/about/g.jpg" alt="ceo"/>
+                    <img class="img2" src="../assets/img/about/ceo.jpg" alt="ceo"/>
                     <p>Coming from a family that owns multiplebusinesses in Canada and US, I alwaysfound myself providing HR support tothem. This is when I realized the gapbetween SME’s and HR.</p>
                     <p>I also saw firsthand how SME’s can truly benefit fromhaving a strategic HR support, i.e.increase business growth and profits. AsSME’s grows and increase revenues, theyin-turn create more jobs, which benefitsthe entire economy and the job market.</p>
                     <p>For this very reason, I started my HRConsulting firm, HR Superhero to becomethe backbone of SME's success.</p>
@@ -104,12 +101,7 @@
                     <p>Within the first three months of working with a client, saved$150K in TempAgency cost by implementing workforce planning meetings and weeklymanpower meetings to identifying resources needed to complete weeklyproduction orders.</p>
                     <h4>Results: $150K+ yearly savings</h4>
                   </div>
-                  <div class="our-services">
-                  <h2>Our Services</h2>
-                  <p>We help SME'S grow theirbusinesses faster than everbefore through engagedemployees.</p>
-                  <p>Our HR Services are specially designed for SMEs. We are about helping SMEs set upthe right systems and frameworks they need to manage HR effectively in theirbusiness.</p>
-                  <p>We build your Company's HR Infrastructure from the ground up and then proactivelymanage it. Our HR Services combines both Employee Lifecycle and TalentManagement solutions, setting your organization for success to increase growth andprofitability.</p>  
-                  </div>
+                 
                   <div class="contact-us">
                     <h2>Want to learn more about HR Superhero's ?</h2>
                     <a href="../pages/contact.php">Contact Us</a>

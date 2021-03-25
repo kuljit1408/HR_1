@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/blog/logo.png" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -61,7 +61,8 @@ href="index.html"><span>HR</span>Superhero</a></h1>
   </div>
   <div class="blog">
 				<div class="bloginside">
-					<div class="client">		
+					<div class="client">
+					<h2>Blogs!</h2>		
 					</div>
 					<div class="blogbox">
           <a href="../pages/blogdetails.php">
@@ -104,9 +105,17 @@ href="index.html"><span>HR</span>Superhero</a></h1>
 			</div>
 
 		</section>
+   
+  <!-- -->
+
+  <div class="contact-us">
+                    <h2>What we do ?</h2>
+                    <a href="../business/services.php">Lets see !</a>
+                  </div>
+
+		</section>
     <div class="space" style="height:50px;">
   </div>
-
   <!-- ======= Footer ======= -->
   <footer>
       <!-- ======= Suscribe Section ======= -->
